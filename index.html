@@ -17,16 +17,16 @@
             <div class="header_menu">
                 <ul class="header_menu_list">
                     <li class="header_menu_item">
-                        <a href="/">About</a>
+                        <a class="header_menu_link" href="/">About</a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="/">Features</a>
+                        <a class="header_menu_link" href="/">Features</a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="/">How to Use</a>
+                        <a class="header_menu_link" href="/">How to Use</a>
                     </li>
                     <li class="header_menu_item">
-                        <a href="/">Download</a>
+                        <a class="header_menu_link" href="/">Download</a>
                     </li>
                 </ul>
             </div>
@@ -36,24 +36,37 @@
     <main>
         <section class="hero_section">
             <div class="container">
-                <div class="hero_info">
-                    <h1 class="white">Momentum</h1>
-                    <p class="white">Launch your product — and savor the momentum.</p>
-                        <div class="hero_button white">
+                <div class="test">
+                    <div class="hero_info">
+                        <h1 class="white">Momentum</h1>
+                        <h3 class="white">Launch your product — and savor the momentum.</p>
+                         <div class="hero_button white">
                             <a href="/" class="hero_buttons-link">Get the App</a>
                         </div>
-                        <!-- должен быть тут див? -->
+                            <!-- должен быть тут див? -->
+                    </div>
+                    <div class="hero_section_img">
+                        <img src="./images/hero_section_img.svg" alt="hero_section_images">
+                    </div>
                 </div>
-                <div class="hero_section_img">
-                    <img src="./images/hero_section_img.svg" alt="hero_section_images">
-                </div>
+                    <span class="arrow"><svg width="9" height="40" viewBox="0 0 9 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 35H9L4.5 40L0 35H4V0H5V35Z" fill="white"/>
+                        </svg>
+                    </span>
             </div>
-            <span class="arrow"><svg width="9" height="40" viewBox="0 0 9 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 35H9L4.5 40L0 35H4V0H5V35Z" fill="white"/>
-                </svg>
-            </span>
+            <!-- тут эту стрелку нужно выкидывать из контейнера? -->
+            
         </section>
 
+        <section class="black">
+            <div class="container">
+                <div class="black_info">
+                    <p class="p2">Aenean Consectetur Porta</p>
+                    <h2 class="white">Nullam quis risus eget urna mollis ornare vel eu leo.</h2>
+                </div>
+                    <img src="./images/black_img.svg" alt="info">
+            </div>
+        </section>
 
 
     </main>
