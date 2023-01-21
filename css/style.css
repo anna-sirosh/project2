@@ -24,6 +24,9 @@ h1{
 .white{
     color: white;
 }
+p{
+    margin: 0;
+}
 /* General settings end */
 
 
@@ -51,6 +54,18 @@ h1{
     display: flex;
     gap: 30px;
 }
+.header_menu_link::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid white;
+    transition: 0.5s ease;
+    width: 0%;
+    left: 0;
+}
+.header_menu_link:hover.header_menu_link::after{
+    transition: 0.5s ease;
+    width: 100%;
+}
 
 /* header end */
 
@@ -59,15 +74,19 @@ h1{
 .hero_section{
     height: 100vh;
     max-height: 800px;
-    min-height: 800px;
+    min-height: 850px;
+    /* запуталась в высоте */
     padding-top: 100px;
 }
-
-.hero_section .container{
+.test{
     display: flex;
     justify-content: space-between;
 }
-
+.hero_section .container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
 .hero_section{
     background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
 }
@@ -75,7 +94,13 @@ h1{
     background: #FC0A7E;
     border-radius: 3px;
     padding: 20px 40px;
+    transition: background .5s ease;
 }
+.hero_buttons-link:hover{
+    background: #7b00a4;
+    transition: background .5s ease;
+}
+
 .hero_button{
     margin: 40px 0;
 }
@@ -89,7 +114,7 @@ h1{
     font-size: 80px;
     line-height: 80px;
 }
-.hero_section p{
+.hero_section h3{
     font-size: 28px;
     font-weight: 400;
     line-height: 44px;
@@ -99,7 +124,38 @@ h1{
     /* text-align: center; почему так не вышло? */
     display: flex;
     justify-content: center;
+    transition: padding .5s ease;
 }
-
-
+.arrow:hover{
+    padding: 20px;
+    transition: padding .5s ease;
+}
 /* hero end */
+
+
+
+/* black start */
+.black{
+    background: #1B1B1B;
+}
+.black .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.black_info{
+    width: 600px;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+.p2{
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+}
+.black h2{
+    font-size: 38px;
+}
+/* black end */
