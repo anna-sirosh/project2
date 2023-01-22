@@ -17,6 +17,9 @@ a{
 .container{
     width: 100%;
     max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 h1{
     margin: 0;
@@ -26,6 +29,25 @@ h1{
 }
 p{
     margin: 0;
+}
+.p2{
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+}
+h2{
+    font-size: 38px;
+    line-height: 48px;
+}
+.info{
+    width: 300px;
+}
+.gap{
+    gap: 200px;
+}
+.gap-top{
+    padding-top: 100px;
 }
 /* General settings end */
 
@@ -85,7 +107,7 @@ p{
 .hero_section .container{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    /* justify-content: space-between; через него не вышло,добавила еще один див и в нем выровняла блоки*/ 
 }
 .hero_section{
     background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
@@ -149,13 +171,45 @@ p{
     text-align: center;
     padding: 100px 0 0 0;
 }
-.p2{
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #A8A8A8;
-}
-.black h2{
-    font-size: 38px;
-}
 /* black end */
+
+
+/* Cay start */
+/* .Cay .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+.Cay_info{
+    width: 450px;
+} */
+/* Cay end */
+
+
+/* Amet start */
+/* .Amet .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 200px;
+}
+.Amet_info{
+    width: 450px;
+} */
+/* Amet end */
+
+
+/* Magna start */
+/* .Magna .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+.Magna_info{
+    width: 450px;
+} */
+/* Magna end */
+
