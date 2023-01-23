@@ -20,6 +20,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 h1{
     margin: 0;
@@ -173,43 +174,48 @@ h2{
 }
 /* black end */
 
+/* services start */
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .services .container{
+    width: 100%;
+    max-width: 1250px;
+ }
+ .services_info{
+    text-align: center;
+    max-width: 430px;
+    width: 100%;
+    gap: 50px;
+    padding: 20px;
+ }
+/* services end */
 
-/* Cay start */
-/* .Cay .container{
+
+/* numbers start */
+.numbers{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
 }
-.Cay_info{
-    width: 450px;
-} */
-/* Cay end */
-
-
-/* Amet start */
-/* .Amet .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0;
+.numbers .container{
+    width: 100%;
+    max-width: 1250px;
     gap: 200px;
+    text-align: center;
 }
-.Amet_info{
-    width: 450px;
-} */
-/* Amet end */
-
-
-/* Magna start */
-/* .Magna .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0;
+.numbers_info{
+    padding: 20px;
+    width: 320px;
 }
-.Magna_info{
-    width: 450px;
-} */
-/* Magna end */
-
+.numbers_info h1{
+    font-size: 60px;
+}
+.numbers_info h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+/* numbers end */
