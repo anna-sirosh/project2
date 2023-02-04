@@ -24,31 +24,52 @@ a{
 }
 h1{
     margin: 0;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
 }
 .white{
     color: white;
 }
 p{
     margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6B6B6B;
 }
 .p2{
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #A8A8A8;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6B6B6B;
 }
 h2{
     font-size: 38px;
     line-height: 48px;
+    font-weight: 400;
 }
 .info{
     width: 300px;
 }
-.gap{
-    gap: 200px;
-}
+
 .gap-top{
     padding-top: 100px;
+}
+.images{
+    width: 100%;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border: none;
+    background: none;
 }
 /* General settings end */
 
@@ -67,6 +88,12 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo_img{
+    width: 100%;
+    max-width: 150px;
+    max-height: 50px;
 }
 
 .header_menu{
@@ -144,15 +171,16 @@ h2{
     margin: 10px 0;
 }
 .arrow{
-    /* text-align: center; почему так не вышло? */
+
     display: flex;
     justify-content: center;
-    transition: padding .5s ease;
+    transition: transform .5s ease;
 }
 .arrow:hover{
-    padding: 20px;
-    transition: padding .5s ease;
+    transform: translateY(30px);
+    transition: transform .5s ease;
 }
+/* скачет по тупому , может быть зона нажатия больше? */
 /* hero end */
 
 
@@ -161,18 +189,39 @@ h2{
 .black{
     background: #1B1B1B;
 }
-.black .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .black_info{
     width: 600px;
     text-align: center;
     padding: 100px 0 0 0;
 }
+.black_info .p2{
+    color: #A8A8A8;
+}
 /* black end */
+
+
+/* block start */
+.block .container{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order .info{
+    order: 2;
+}
+.order img{
+    order: 1;
+}
+.span{
+    text-decoration: underline;
+    font-weight: 700;
+}
+/* второй ордер можно же убрать да ? */
+/* block end */
+
 
 /* services start */
 .services{
@@ -203,19 +252,101 @@ h2{
 .numbers .container{
     width: 100%;
     max-width: 1250px;
-    gap: 200px;
+    gap: 100px;
     text-align: center;
 }
 .numbers_info{
     padding: 20px;
     width: 320px;
 }
-.numbers_info h1{
+.numbers_info h6{
     font-size: 60px;
+    font-weight: 400;
+    margin: 0px;
 }
 .numbers_info h4{
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
 }
 /* numbers end */
+
+/* quotes start */
+
+.quotes_info{
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+}
+.list_company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+/* quotes end */
+
+
+/* vector start */
+.vector{
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+}
+.vector_butttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 10px 150px 10px;
+}
+.button{
+    transition: background .5s ease;
+    padding: 15px 30px;
+    background: none;
+    border: 0.5px solid white; 
+    /* transition: border .5s ease; */
+}
+.button:hover{
+    background: #FC0A7E;;
+    transition: background .5s ease;
+    border: none;
+    /* transition: border .5s ease; */
+/* нельзя 2 транзишина в одном ховер описать? */
+}
+.vector h2{
+    margin: 0;
+    text-align: center;
+    padding: 150px 10px 10px 10px;
+}
+/* vector end */
+
+
+/* footer start */
+.footer{
+    background: #1B1B1B;
+}
+.footer_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.footer_input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.input_email{
+    padding: 20px;
+    width: 450px;
+    outline: none;
+    border: none;
+}
+.footer_input-button{
+    position: absolute;
+    padding: 20px 50px;
+    background: #FC0A7E;
+    color: #1C1C1C;
+}
+/* footer end */
